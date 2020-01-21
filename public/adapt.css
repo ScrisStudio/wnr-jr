@@ -1,0 +1,35 @@
+@media (max-height:1000px) {
+    #settings-container {
+        max-height: 600px;
+    }
+}
+
+@media (max-height:600px) {
+    #all-sum, #backer {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        bottom: auto;
+    }
+    #empty-container {
+        display: block;
+    }
+    #settings-container {
+        max-height: 300px;
+    }
+}
+
+@media (max-height: 450px) {
+    #settings-container {
+        max-height: 200px;
+    }
+    #empty-container {
+        line-height: 200%;
+    }
+}
+
+@media (max-height: 350px) {
+    #settings-container {
+        max-height: 150px;
+    }
+}

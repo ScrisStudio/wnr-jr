@@ -1,0 +1,70 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run vue-debug",
+            "type": "shell",
+            "command": "yarn run d",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$jshint"
+            ]
+        },
+        {
+            "label": "build browser",
+            "type": "shell",
+            "command": "yarn run w",
+            "group": "build",
+            "problemMatcher": [
+                "$jshint"
+            ]
+        },
+        {
+            "label": "run electron",
+            "type": "shell",
+            "command": "yarn run e",
+            "group": "build",
+            "problemMatcher": [
+                "$jshint"
+            ]
+        },
+        {
+            "label": "build windows",
+            "type": "shell",
+            "command": "yarn run win",
+            "group": "build",
+            "problemMatcher": [
+                "$jshint"
+            ]
+        },
+        {
+            "label": "build mac",
+            "type": "shell",
+            "command": "yarn run mac",
+            "group": "build",
+            "problemMatcher": [
+                "$jshint"
+            ]
+        },
+        {
+            "label": "build android",
+            "type": "shell",
+            "command": "yarn run a",
+            "group": "build",
+            "problemMatcher": [
+                "$jshint"
+            ]
+        },
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "yarn",
+            "group": "none"
+        }
+    ]
+}

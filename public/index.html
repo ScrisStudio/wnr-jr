@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="apple-touch-icon" href="<%= BASE_URL %>appleTouchIcon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes" /> <!-- For iOS Safari -->
+  <link rel="manifest" href="manifest.json"><!-- For PWA -->
+  <script>
+    if (typeof module === 'object') {
+      window.module = module; module = undefined;
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>font-awesome/css/font-awesome.min.css" />
+  <title>wnr-jr</title>
+  <style>
+    .lock-wrap {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 125%;
+      left: 0;
+      top: 0;
+      background-color: #5490ea;
+      color: #f9f9f9;
+      z-index: 9999;
+    }
+
+    .lock {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 250px;
+      height: 150px;
+      margin: -120px 0 0 -125px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but wnr-jr doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div class="lock-wrap " id="the-lock">
+    <div class="lock">
+      <i class="display-1 fa fa-mobile" aria-hidden="true"></i>
+      <br />
+      <span id="orientation-tip"></span>
+    </div>
+  </div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script>
+    /* Orientation Tip */
+    var lang = navigator.language || navigator.userLanguage;
+    lang = lang.substr(0, 2);
+    if (lang == 'zh') {
+      document.getElementById("orientation-tip").innerText = "移动设备请竖屏使用";
+    } else {
+      document.getElementById("orientation-tip").innerText = "Please rotate your device to use.";
+    }
+    window.addEventListener("orientationchange", function () {
+      orientationWatcher();
+    }, false);
+    orientationWatcher();
+    function orientationWatcher() {
+      if ((window.orientation == 90 || window.orientation == -90) && (screen.availHeight < 500 || screen.availWidth < 500)) {
+        document.getElementById("the-lock").style.display = "block";
+      } else {
+        document.getElementById("the-lock").style.display = "none";
+      }
+    }
+    /* Request H5 Notification Permission */
+    window.addEventListener('load', function () {
+      Notification.requestPermission(function (status) {
+        if (Notification.permission !== status) {
+          Notification.permission = status;
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

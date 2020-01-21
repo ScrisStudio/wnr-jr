@@ -1,0 +1,227 @@
+html, body {
+    font-family: "Source Han Sans CN", "Noto Sans SC", "Noto Sans CJK", -apple-system, "Microsoft YaHei UI", "微软雅黑", sans-serif;
+    background-color: #f9f9f9;
+    display: -webkit-flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+}
+
+body, input {
+    letter-spacing: 0.5px;
+}
+
+.focuser {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: inherit;
+    padding: 1px 0px;
+}
+
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.12s ease-in-out;
+    pointer-events: none;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.w-225 {
+    width: 225px;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-165 {
+    width: 165px;
+}
+
+.w-144 {
+    width: 144px;
+}
+
+.s-input {
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    flex-basis: inherit;
+}
+
+.s-input-border-bottom:hover, .s-input-border-bottom:focus {
+    border-bottom-width: 3px;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+}
+
+.s-input-check:checked {
+    background-image: url(./assets/check.png);
+    background-size: contain;
+    transition: all 0.2s ease-in-out;
+}
+
+input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder {
+    color: #99999999;
+}
+
+.work, .work::placeholder {
+    color: #ea5454;
+}
+
+.work:focus::placeholder, .work:hover::placeholder {
+    color: #ea5454c2;
+}
+
+.rest, .rest::placeholder {
+    color: #5490ea;
+}
+
+.rest:focus::placeholder, .rest:hover::placeholder {
+    color: #5490eac2;
+}
+
+.work-rest-input {
+    letter-spacing: 0.64px;
+    font-size: 17.3px;
+}
+
+.timer {
+    line-height: 250%;
+}
+
+.settings-note {
+    overflow-wrap: break-word;
+    width: 200px;
+}
+
+#only-rest-modal {
+    position: absolute;
+    transform: translate3d(0px, 0px, 9999px);
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#only-rest-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#controller-right {
+    position: absolute;
+    top: 6px;
+    /* fix same height */
+    right: 10px;
+}
+
+#controller-center {
+    position: absolute;
+    top: 8px;
+    /* fix same height */
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#controller-left {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+#settings-container, #home-input {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(2%);
+}
+
+#settings-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-width: 88%;
+    max-height: 960px;
+    scrollbar-color: #5555558f #f9f9f9;
+}
+
+#settings-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#settings-container::-webkit-scrollbar {
+    width: 4px;
+    background-color: #f9f9f9;
+}
+
+#settings-container::-webkit-scrollbar-thumb {
+    background-color: #5555558f;
+}
+
+#settings-container::-webkit-scrollbar-thumb:active {
+    background-color: #4a9af68f;
+}
+
+#focus-work-set {
+    border-color: #ea5454;
+}
+
+#focus-work-set:checked {
+    background-image: url(./assets/check-work.png);
+}
+
+#all-sum, #backer, #settings-submit {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    -webkit-app-region: no-drag;
+    /* let it clickable */
+    -webkit-user-select: none;
+}
+
+#timer-note {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#backer a {
+    text-decoration: underline;
+}
+
+#back-home {
+    transform: translateY(5%);
+}
+
+#empty-container {
+    display: none;
+}
