@@ -23,6 +23,9 @@
       Made with ❤ by
       <a class="rest" :href="PersonalPage()" target="_blank">Roderick Qiu</a>.
     </p>
+    <p class="small">
+      <a class="rest" :href="Downloader()" target="_blank">{{ $t("about.downloadFullVersion") }}</a>.
+    </p>
   </div>
 </template>
 
@@ -45,6 +48,9 @@ export default {
     },
     PersonalPage: function() {
       return "https://r-q.name/";
+    },
+    Downloader: function() {
+      return "https://github.com/RoderickQiu/wnr/releases";
     }
   }
 };

@@ -3,7 +3,7 @@
   "appName": "wnr",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
-  "webDir": "www",
+  "webDir": "docs",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 1500,

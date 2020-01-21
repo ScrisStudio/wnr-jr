@@ -40,6 +40,8 @@ yarn run d # vue-debug
 
 yarn run w # capacitor-web
 
+yarn run build # build
+
 ```
 
 **We are using [Capacitor](https://capacitor.ionicframework.com/docs/) and [Vue](https://vuejs.org/v2/guide/).**
@@ -52,11 +54,11 @@ yarn run w # capacitor-web
 
 - src
 
-    This is the main folder for Vue developing. It's the main thing in this project.
+    This is the main folder for Vue developing. It's the main folder in this project.
 
-- www
+- docs
 
-    This is the folder which Vue exports to. It's not included because it's generated.
+    This is the folder which Vue exports to. It's generated, using for GitHub pages, so it's included online.
 
 - node_modules
 
