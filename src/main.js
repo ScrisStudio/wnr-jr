@@ -11,7 +11,8 @@ import { Plugins } from '@capacitor/core'
 const { Device } = Plugins
 import VueI18n from 'vue-i18n'
 import '../public/i18nMessages'
-import { messages } from '../public/i18nMessages';
+import { messages } from '../public/i18nMessages'
+import { register } from 'register-service-worker'
 
 Vue.config.productionTip = false;
 Vue.config.errorHandler = (err, vm, info) => {
@@ -20,6 +21,12 @@ Vue.config.errorHandler = (err, vm, info) => {
 
 Vue.use(DropdownPlugin);
 Vue.use(VueI18n);
+
+register(`service-worker.js`, {
+  error(error) {
+    console.error(error)
+  }
+})
 
 Device.getLanguageCode().then(lang => {
   let langCode;
