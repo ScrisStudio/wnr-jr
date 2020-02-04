@@ -676,10 +676,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@capacitor/cli@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.npm.taobao.org/@capacitor/cli/download/@capacitor/cli-1.4.0.tgz#09c95aa6b1eefd0b6c9c454bf741efb792e566e2"
-  integrity sha1-CclaprHu/QtsnEVL90Hvt5LlZuI=
+"@capacitor/cli@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.npm.taobao.org/@capacitor/cli/download/@capacitor/cli-1.5.0.tgz#7420a60fb13a7c9feceaa3d91438aa78b9615924"
+  integrity sha1-dCCmD7E6fJ/s6qPZFDiqeLlhWSQ=
   dependencies:
     chalk "^2.3.0"
     commander "^2.12.2"
@@ -693,10 +693,10 @@
     which "^1.3.0"
     xml2js "^0.4.19"
 
-"@capacitor/core@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.npm.taobao.org/@capacitor/core/download/@capacitor/core-1.4.0.tgz#4f6a1fd501687f1819e7be673b528cc3e8f7ce97"
-  integrity sha1-T2of1QFofxgZ575nO1KMw+j3zpc=
+"@capacitor/core@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.npm.taobao.org/@capacitor/core/download/@capacitor/core-1.5.0.tgz#23c97ce35d0e27ed2eaa1977aa8564f25019db93"
+  integrity sha1-I8l8410OJ+0uqhl3qoVk8lAZ25M=
   dependencies:
     tslib "^1.9.0"
 
@@ -741,10 +741,10 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@ionic/pwa-elements@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.npm.taobao.org/@ionic/pwa-elements/download/@ionic/pwa-elements-1.4.1.tgz#ac8798dc23e38040885a30e6f0c5b485fe87c320"
-  integrity sha1-rIeY3CPjgECIWjDm8MW0hf6HwyA=
+"@ionic/pwa-elements@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.npm.taobao.org/@ionic/pwa-elements/download/@ionic/pwa-elements-1.4.2.tgz#1ed66a4ff12992681bda556ae477187eeab362fb"
+  integrity sha1-HtZqT/Epkmgb2lVq5HcYfuqzYvs=
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1582,14 +1582,14 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-vue@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.npm.taobao.org/bootstrap-vue/download/bootstrap-vue-2.2.2.tgz#750d461d18352e2fd6cd2debfe52ebeb125c191f"
-  integrity sha1-dQ1GHRg1Li/WzS3r/lLr6xJcGR8=
+bootstrap-vue@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/bootstrap-vue/download/bootstrap-vue-2.4.0.tgz#5a6ec3f6fe56df264020ad4aa3dc91c3368c6a64"
+  integrity sha1-Wm7D9v5W3yZAIK1Ko9yRwzaMamQ=
   dependencies:
     "@nuxt/opencollective" "^0.3.0"
     bootstrap ">=4.4.1 <5.0.0"
-    popper.js "^1.16.0"
+    popper.js "^1.16.1"
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
 
@@ -5503,10 +5503,10 @@ plist@^3.0.1:
     xmlbuilder "^9.0.7"
     xmldom "0.1.x"
 
-popper.js@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.16.0.tgz#2e1816bcbbaa518ea6c2e15a466f4cb9c6e2fbb3"
-  integrity sha1-LhgWvLuqUY6mwuFaRm9Mucbi+7M=
+popper.js@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs=
 
 portal-vue@^2.1.7:
   version "2.1.7"

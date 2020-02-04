@@ -15,6 +15,7 @@
         class="small s-input text-muted s-input-border-bottom w-250 s-input-border-bottom"
         maxlength="13"
         v-bind:placeholder="$t('home.placeholder.title')"
+        v-on:keydown.enter="submit()"
       />
       <!-- title set -->
       <br />
@@ -31,6 +32,7 @@
         autofocus
         required
         v-bind:placeholder="$t('home.placeholder.workTime')"
+        v-on:keydown.enter="submit()"
       />
       <!-- work time set -->
       <br />
@@ -46,6 +48,7 @@
         class="rest work-rest-input s-input s-input-number s-input-border-bottom w-250"
         required
         v-bind:placeholder="$t('home.placeholder.restTime')"
+        v-on:keydown.enter="submit()"
       />
       <!-- rest time set -->
       <br />
@@ -61,6 +64,7 @@
         class="small s-input s-input-number w-250 s-input-border-bottom"
         required
         v-bind:placeholder="$t('home.placeholder.loop')"
+        v-on:keydown.enter="submit()"
       />
       <!-- loops set -->
       <br />
@@ -74,6 +78,7 @@
         class="small text-muted s-input w-250 s-input-border-bottom"
         maxlength="39"
         v-bind:placeholder="$t('home.placeholder.notes')"
+        v-on:keydown.enter="submit()"
       />
       <!-- notes set -->
       <br />
