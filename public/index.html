@@ -14,6 +14,7 @@
       window.module = module; module = undefined;
     }
   </script>
+  <script src="<%= BASE_URL %>patcher.js"></script>
   <link rel="stylesheet" type="text/css" href="<%= BASE_URL %>font-awesome/css/font-awesome.min.css" />
   <title>wnr-jr</title>
   <style>
@@ -41,12 +42,13 @@
   </style>
 </head>
 
-<body>
+<body id="page">
   <noscript>
     <strong>We're sorry but wnr-jr doesn't work properly without JavaScript enabled. Please enable it to
       continue.</strong>
   </noscript>
-  <div class="lock-wrap " id="the-lock">
+
+  <div class="lock-wrap" id="the-lock">
     <div class="lock">
       <i class="display-1 fa fa-mobile" aria-hidden="true"></i>
       <br />
@@ -77,11 +79,16 @@
     }
     /* Request H5 Notification Permission */
     window.addEventListener('load', function () {
-      Notification.requestPermission(function (status) {
-        if (Notification.permission !== status) {
-          Notification.permission = status;
-        }
-      });
+      if (!("Notification" in window)) {
+        if (lang == 'zh')
+          alert("浏览器过于陈旧，wnr-jr可能无法正常运行。");
+        else alert("This browser is too old, wnr-jr may fail to run.");
+      } else
+        Notification.requestPermission(function (status) {
+          if (Notification.permission !== status) {
+            Notification.permission = status;
+          }
+        });
     });
   </script>
 </body>

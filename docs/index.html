@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><link rel=icon href=assets/favicon.ico><link rel=apple-touch-icon href=assets/appleTouchIcon.png><link rel=manifest href=manifest.json><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"><meta name=apple-mobile-web-app-capable content=yes><script>if (typeof module === 'object') {
       window.module = module; module = undefined;
-    }</script><link rel=stylesheet type=text/css href=font-awesome/css/font-awesome.min.css><title>wnr-jr</title><style>.lock-wrap {
+    }</script><script src=patcher.js></script><link rel=stylesheet type=text/css href=font-awesome/css/font-awesome.min.css><title>wnr-jr</title><style>.lock-wrap {
       position: absolute;
       display: none;
       width: 100%;
@@ -20,7 +20,7 @@
       height: 150px;
       margin: -120px 0 0 -125px;
       text-align: center;
-    }</style><link href=js/chunk-2d22996d.3ea066f6.js rel=prefetch><link href=js/chunk-56786d8d.c4f67b70.js rel=prefetch><link href=js/chunk-71cb9d76.53ad111e.js rel=prefetch><link href=js/chunk-f97d8b58.8936366f.js rel=prefetch><link href=css/app.61f8554d.css rel=preload as=style><link href=css/chunk-vendors.89f6d54a.css rel=preload as=style><link href=js/app.6e6039d8.js rel=preload as=script><link href=js/chunk-vendors.bad25e77.js rel=preload as=script><link href=css/chunk-vendors.89f6d54a.css rel=stylesheet><link href=css/app.61f8554d.css rel=stylesheet></head><body><noscript><strong>We're sorry but wnr-jr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=lock-wrap id=the-lock><div class=lock><i class="display-1 fa fa-mobile" aria-hidden=true></i><br><span id=orientation-tip></span></div></div><div id=app></div><script>/* Orientation Tip */
+    }</style><link href=js/chunk-2d22996d.3ea066f6.js rel=prefetch><link href=js/chunk-56786d8d.c4f67b70.js rel=prefetch><link href=js/chunk-71cb9d76.53ad111e.js rel=prefetch><link href=js/chunk-f97d8b58.8936366f.js rel=prefetch><link href=css/app.61f8554d.css rel=preload as=style><link href=css/chunk-vendors.89f6d54a.css rel=preload as=style><link href=js/app.6e6039d8.js rel=preload as=script><link href=js/chunk-vendors.bad25e77.js rel=preload as=script><link href=css/chunk-vendors.89f6d54a.css rel=stylesheet><link href=css/app.61f8554d.css rel=stylesheet></head><body id=page><noscript><strong>We're sorry but wnr-jr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class=lock-wrap id=the-lock><div class=lock><i class="display-1 fa fa-mobile" aria-hidden=true></i><br><span id=orientation-tip></span></div></div><div id=app></div><script>/* Orientation Tip */
     var lang = navigator.language || navigator.userLanguage;
     lang = lang.substr(0, 2);
     if (lang == 'zh') {
@@ -41,9 +41,14 @@
     }
     /* Request H5 Notification Permission */
     window.addEventListener('load', function () {
-      Notification.requestPermission(function (status) {
-        if (Notification.permission !== status) {
-          Notification.permission = status;
-        }
-      });
+      if (!("Notification" in window)) {
+        if (lang == 'zh')
+          alert("浏览器过于陈旧，wnr-jr可能无法正常运行。");
+        else alert("This browser is too old, wnr-jr may fail to run.");
+      } else
+        Notification.requestPermission(function (status) {
+          if (Notification.permission !== status) {
+            Notification.permission = status;
+          }
+        });
     });</script><script src=js/chunk-vendors.bad25e77.js></script><script src=js/app.6e6039d8.js></script></body></html>
