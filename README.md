@@ -1,11 +1,10 @@
-<p align="center"><img src="https://raw.githubusercontent.com/RoderickQiu/wnr/master/res/icons/wnrIcon.png"
-        width="64px" /></p>
+<p align="center"><img src="https://i.loli.net/2020/02/25/uTOEgdb4iHoJ1DX.png" width="64px" /></p>
 
 <h2 align="center">wnr-<i>jr</i></h2>
 
 <p align="center">
-    <b>The name is an abbr of "Work & Rest". It's a timer app with strong expansibility for devices.</b>
-    This is now the web running, simplified version of wnr.
+    The name is an abbr of "Work & Rest". It's a timer app with strong expansibility for devices.
+    <b>This is now the web running, simplified version of wnr.</b>
 </p>
 
 <p align="center">
@@ -16,9 +15,9 @@
 
 ## Contact
 
-- Homepage: [wnr.scris.top](https://wnr.scris.top/).
+- Homepage: [wnr-jr](https://wnr-jr.scris.top/) | [wnr Homepage](https://wnr.scris.top/).
 
-- Downloads: [Releases](https://github.com/RoderickQiu/wnr/releases/).
+- Downloads full version: [Releases](https://github.com/RoderickQiu/wnr/releases/).
 
 - Need Help: [Go to Help Page](https://wnr.scris.top/help.html) or [Contact Me](https://roderickqiu.scris.top/).
 
